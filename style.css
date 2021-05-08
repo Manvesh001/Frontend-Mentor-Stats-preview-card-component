@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(233, 47%, 7%);
+}
+
+.right{
+    width: 40%;
+    height: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background: hsl(244, 38%, 16%);
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 50px;
+    margin-top: 28vh;
+    margin-left: 15.5em;
+    margin-bottom: 2em;
+    border-radius: 10px;
+    overflow: hidden;
+    /* flex-direction: column; */
+    /* position: relative; */
+}
+
+.right h1{
+    position: relative;
+    color: white;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.right h1 span{
+    color: hsl(277, 64%, 61%);
+}
+
+.right .letter{
+    color: rgba(245, 245, 245, 0.746);
+    line-height: 22px;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.right h2{
+    color: white;
+    display: block;
+}
+
+.right .good{
+    /* display: flex; */
+    flex-wrap: wrap;
+}
+ .right .stat{
+    display: inline-block;
+    /* margin-left: 30px; */
+    margin-right: 90px;
+    /* text-transform: uppercase; */
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.right .stat .hi{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.right .stat .hello{
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin-top: 3px;
+    color: rgba(245, 245, 245, 0.746);
+}
+
+.image{
+    position: absolute;
+    width: 50%;
+    right: -100px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.image img{
+    position: relative;
+    height: 100%;
+    width: 70%;
+    margin-right: 70px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.image::before{
+    content: '';
+    background-color: hsl(277, 64%, 61%);
+    width: 70%;
+    height: 99%;
+    position: absolute;
+    opacity: 0.5;
+    overflow: hidden;
+}
